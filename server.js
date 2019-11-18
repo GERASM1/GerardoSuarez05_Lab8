@@ -161,7 +161,7 @@ app.put("/blog-posts/:id", jsonParser, (req, res, next) => {
             if(!newPost) {
                 res.statusMessage = "ID was not found";
                 return res.status(404).json({
-                    message: "ID was not found" u7,
+                    message: "ID was not found",
                     status: 404
                 });
             }
